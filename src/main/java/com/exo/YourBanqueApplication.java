@@ -42,6 +42,8 @@ public class YourBanqueApplication implements CommandLineRunner{
 		
 		Client c2 = clientRepository.save(new Client("MOUMMID","hamza.moummid@fst-marrakech.ma"));
 		
+		Client c3 = clientRepository.save(new Client("Saloumi","saloumi.achraf@fst-marrakech.ma"));
+		
 		// Compte
 		
 		Compte cp1 = compteRepository.save(new CompteCourant("cp1", new Date(), 90000, c1, 6000));  
